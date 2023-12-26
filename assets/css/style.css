@@ -1,0 +1,107 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.checked {
+    text-decoration: line-through;
+    color: red;
+  }
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 15px;
+  height: 100vh;
+  width: 100vw;
+  background: url(../img/photo.jpeg);
+  background-size: cover;
+
+}
+
+form{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card{
+
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border: 3px solid black;
+  background-color: rgb(231, 246, 255);
+  width: 400px;
+  max-width: 100%;
+  height: 400px;
+  max-height: 100%
+  
+}
+
+.card2{
+
+  border: 3px solid black;
+  background-color: aliceblue;
+  width: 400px;
+  max-width: 100%;
+  overflow: auto;
+  max-height: 100%;
+  height: 150px;
+}
+
+button{
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+  width: 100%;
+  border-radius: 40px;
+  cursor: pointer;
+
+}
+
+input{
+  border-radius: 30px;
+  border: 2px solid;
+  outline: none;
+  width: 100%;
+  margin-bottom: 10px;
+  
+
+}
+
+label{
+  color: black;
+}
+
+h1{
+  color: black;
+  justify-self: center;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+legend{
+  color: black;
+  margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+  form {
+    flex-direction: row;
+  }
+
+  input {
+    width: auto;
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+
+  button {
+    width: auto;
+  }
+}
